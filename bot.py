@@ -3,7 +3,7 @@ import tweepy
 import praw
 import prawcore
 from datetime import datetime
-#region region auth
+#region region yetkilendirme
 övgüler = ["iyi bot","cici bot","good bot","nice bot","awesome bot","güzel bot"]
 file_path = "bot.log"
 auth = tweepy.OAuthHandler("","")
