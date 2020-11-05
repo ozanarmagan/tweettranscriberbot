@@ -15,7 +15,7 @@ reddit = praw.Reddit(client_id="",
                      username="tweet_transcriberbot",
                      user_agent="tweettrabscriber  v0.1")
 #endregion
-#region region definitions
+#region region fonksiyonlar
 tr_subreddits = ["turkey","KGBTR","yatirim","burdurland","svihs"]
 en_subreddits = []
 def replypost(url,submission,isenglish):
