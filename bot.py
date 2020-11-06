@@ -101,10 +101,16 @@ This tweet is quoted **{quoted_user}** [@{quoted_user_screen}](https://twitter.c
                 submission.reply(comment_en)
                 submission.save()
                 print("""[{time}]Yorum yapıldı. URL: {url} Dil:EN""".format(time=datetime.now().strftime("%H:%M:%S"),url=submission.shortlink))
+                f = open(file_path,'a')
+                f.write("""\n[{time}]Yorum yapıldı. URL: {url} Dil:EN""".format(time=datetime.now().strftime("%H:%M:%S"), url=submission.shortlink))
+                f.close()
             elif(isenglish == False):
                 submission.reply(comment_tr)
                 submission.save()
                 print("""[{time}]Yorum yapıldı. URL: {url} Dil:TR""".format(time=datetime.now().strftime("%H:%M:%S"), url=submission.shortlink))
+                f = open(file_path,'a')
+                f.write("""\n[{time}]Yorum yapıldı. URL: {url} Dil:TR""".format(time=datetime.now().strftime("%H:%M:%S"), url=submission.shortlink))
+                f.close()
         photourls = []
         isvideo = False
         videourl = ""
